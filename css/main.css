@@ -1,0 +1,119 @@
+@import url("https://use.typekit.net/mub4nsa.css");
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Bebas-Kai;
+    
+}
+
+.header{
+
+    margin: 0;
+    padding-left: 1em;
+    
+    padding-bottom: .1em;
+    background: #EEC907;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    
+}
+
+.head{
+    margin: .1em;
+    padding-top: 1.3em;
+    width: 60%;
+}
+
+.hero-section{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-img{
+    display: flex;
+    padding: 0em;
+    margin: 0;
+    padding-left: 3em;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+.wave-img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-top: 27.5em;
+}
+
+.desc-title{
+    
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    top: 44.5em;
+    left: .5em;
+    font-size: .8em;
+    
+}
+
+.desc-content-p{
+    display: block;
+    position: relative;
+    font-size: 1em;
+    
+    
+    
+}
+
+.extra-div{
+    display: flex;
+    position: relative;
+    background: #C7FCFF;
+    margin: 0;
+    padding: 0;
+    bottom: 2em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.button-main{
+    justify-content: center;
+    margin: 1em;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    
+
+    appearance: none;
+    border: none;
+    outline: none;
+
+    background: #FFE600;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: .8em;
+    font-family: Bebas Kai;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: .5em;
+    text-align: center;
+    
+    transition: 1s;
+}
+
+.button-main:hover{
+    color: black;
+    background: #C7E500;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+
