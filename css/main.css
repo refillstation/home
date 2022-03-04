@@ -80,18 +80,21 @@ body{
     background: #C7FCFF;
     margin: 0;
     padding: 0;
-    bottom: .8em;
+    bottom: 0em;
+    top: -10px;
+    
+    
     justify-content: center;
     align-items: center;
     align-content: center;
     z-index: auto;
-    line-height: 5em;
+    line-height: 6em;
     
 }
 
 .button-main{
     justify-content: center;
-    margin: .5em;
+    margin: 1em;
     padding: .8em;
     align-items: center;
     justify-content: center;
@@ -100,6 +103,7 @@ body{
     appearance: none;
     border: none;
     outline: none;
+    display: inline-flex;
 
     background: #FFE600;
     border: 3px solid #000000;
@@ -120,6 +124,37 @@ body{
     background: #C7E500;
     cursor: pointer;
     font-size: large;
-     
+    margin-top: 1em;
 }
 
+.button-div{
+    padding: .3em;
+}
+
+.footer{
+    margin: 0em;
+    padding: 1em;
+    padding-bottom: 5em;
+    background: #8D8D8D;
+    
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    bottom: 10em;
+    top: 10em;
+    padding: 1em;
+    padding-top: 1em;
+}
+
+.footer-text-te{
+    padding: 1rem;
+}
+
+.footer-text-st{
+    padding: 1rem;
+}
+
+.cart{
+    padding-left: 5px;
+    
+}
