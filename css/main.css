@@ -4,7 +4,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: bebas-kai;
-    background: #8D8D8D;
+    background: white;
 }
 
 .header{
@@ -22,8 +22,6 @@ body{
     margin: .1em;
     padding-top: 1.3em;
     width: 60%;
-    animation: logoIntro 500ms forwards ease-out;
-    opacity: 0;
 }
 
 .hero-section{
@@ -31,7 +29,6 @@ body{
     margin: 0;
     padding: 0;
     display: grid;
-    background: white;
 }
 
 .hero-img{
@@ -45,8 +42,6 @@ body{
     align-content: center;
     align-self: center;
     place-items: center;
-    animation: introLoad 2s forwards ease-out;
-    opacity: 0;
     
 }
 
@@ -67,8 +62,7 @@ body{
     font-size: .8em;
     z-index: 10;
     display: grid;
-    animation: textAnim 1.5s forwards ease-in;
-    opacity: 0%;
+    
 }
 
 .desc-content-p{
@@ -78,10 +72,6 @@ body{
     place-items: center;
     
     
-}
-
-.div-desc-segment{
-    background: white;
 }
 
 .extra-div{
@@ -166,8 +156,8 @@ body{
 
 .cart{
     padding-left: 6px;
-    animation: moveArrow 1s alternate-reverse infinite;
     
+
 }
 
 /*Animation*/
@@ -211,5 +201,4 @@ body{
         transform: translateX(0px);
         opacity: 100%;
     }
-
 }
