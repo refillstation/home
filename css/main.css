@@ -3,7 +3,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: Bebas-Kai;
+    font-family: bebas-kai;
     background: white;
 }
 
@@ -28,18 +28,20 @@ body{
     position: absolute;
     margin: 0;
     padding: 0;
+    display: grid;
 }
 
 .hero-img{
     display: flex;
     padding: 0em;
     margin: 0;
-    padding-left: 3em;
-    width: 75%;
+    padding-left: 0em;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    
-    
+    align-content: center;
+    align-self: center;
+    place-items: center;
     
 }
 
@@ -47,7 +49,7 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-    padding-top: 27.5em;
+    padding-top: 38.5em;
 }
 
 .desc-title{
@@ -55,9 +57,11 @@ body{
     position: absolute;
     align-items: center;
     text-align: center;
-    top: 44.5em;
+    top: 58.5em;
     left: .5em;
     font-size: .8em;
+    z-index: 10;
+    display: grid;
     
 }
 
@@ -65,7 +69,7 @@ body{
     display: block;
     position: relative;
     font-size: 1em;
-    
+    place-items: center;
     
     
 }
@@ -76,17 +80,19 @@ body{
     background: #C7FCFF;
     margin: 0;
     padding: 0;
-    bottom: 2em;
+    bottom: .8em;
     justify-content: center;
     align-items: center;
     align-content: center;
+    z-index: auto;
+    line-height: 5em;
     
 }
 
 .button-main{
     justify-content: center;
-    margin: 1em;
-    padding: 1em;
+    margin: .5em;
+    padding: .8em;
     align-items: center;
     justify-content: center;
     
@@ -99,21 +105,21 @@ body{
     border: 3px solid #000000;
     box-sizing: border-box;
     border-radius: .8em;
-    font-family: Bebas Kai;
+    font-family: Bebas-Kai;
     font-style: normal;
     font-weight: normal;
     font-size: 1em;
     line-height: .5em;
     text-align: center;
     
-    transition: 1s;
+    transition: 400ms;
 }
 
 .button-main:hover{
     color: black;
     background: #C7E500;
     cursor: pointer;
-    transition: 1s;
-    
+    font-size: large;
+     
 }
 
