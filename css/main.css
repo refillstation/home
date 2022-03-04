@@ -23,7 +23,7 @@ body{
     margin: .1em;
     padding-top: 1.3em;
     width: 60%;
-    animation: logoIntro 500ms forwards ease-out;
+    animation: logoIntro 1s forwards ease-out;
     opacity: 0;
 }
 
@@ -87,7 +87,9 @@ body{
     margin: 0;
     padding: 0;
     bottom: 0em;
-    top: -10px;
+    top: -1.5em;
+    padding-top: -1em;
+    padding-bottom: 2em;
     
     
     justify-content: center;
@@ -123,6 +125,8 @@ body{
     text-align: center;
     
     transition: 400ms;
+    animation: revealButton 1.3s forwards ease-in-out;
+    opacity: 0;
 }
 
 .button-main:hover{
@@ -134,43 +138,54 @@ body{
 }
 
 .button-div{
-    padding: .3em;
+    padding: 0em;
 }
 
 .footer{
     margin: 0em;
-    padding: .8em;
+    padding: 5em;
     padding-bottom: 5em;
-    background: #8D8D8D;
+    background: #666666;
     
     font-size: 1em;
     color: white;
     text-align: center;
-    bottom: 10em;
-    top: 10em;
+    bottom: 100em;
+    top: 20em;
     padding: 1em;
     padding-top: 1em;
+    
+    
 }
 
 .footer-text-te{
     padding: 1rem;
+    top: 10em;
 }
 
 .footer-text-st{
-    padding: 1rem;
+    padding: .5rem;
+    margin: 1em;
+    padding-bottom: 3em;
 }
 
-.cart{
+.chevron{
     padding-left: 6px;
-    animation: moveArrow 1s alternate-reverse infinite;
+    animation: moveCart 1s alternate-reverse infinite;
+    padding-right: 0;
+    padding-bottom: 1px;
+    margin: 0;
+}
 
+.footer-title{
+    padding: 1em;
 }
 
 /*Animation*/
 
 @keyframes introLoad{
     from{
-        transform: translateY(-100px);
+        transform: translateY(-45px);
     }
     to{
         transform: translateY(3px);
@@ -180,22 +195,22 @@ body{
 
 
 
-@keyframes moveArrow{
+@keyframes moveCart{
     from{
-        transform: translateY(3px);
+        transform: translateX(5px);
     }
     to{
-        transform: translateY(-3px);
+        transform: translateX(0px);
         opacity: 1;
     }
 }
 
 @keyframes textAnim{
     from{
-        transform: translateY(-100px);
+        transform: translateX(-100px);
     }
     to{
-        transform: translateY(0px);
+        transform: translateX(0px);
         opacity: 1;
     }
 }
@@ -207,5 +222,17 @@ body{
     to{
         transform: translateX(0px);
         opacity: 100%;
+    }
+}
+
+@keyframes revealButton{
+    from{
+        transform: translateX(-50px);
+        font-weight: lighter;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+        font-weight: normal;
     }
 }
