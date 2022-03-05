@@ -49,12 +49,19 @@ body{
     opacity: 0;
 }
 
+.hero-desktop{
+    display: none;
+    animation: introLoad 2s forwards ease-out;
+}
+
 .wave-img{
     margin: 0;
     padding: 0;
     width: 100%;
     padding-top: 38.5em;
 }
+
+
 
 .desc-title{
     
@@ -68,6 +75,8 @@ body{
     display: grid;
     animation: textAnim 2s forwards ease-in-out;
     opacity: 0;
+    padding: 2em;
+    margin-top: -1em;
     
 }
 
@@ -171,7 +180,7 @@ body{
 
 .chevron{
     padding-left: 6px;
-    animation: moveCart 1s alternate-reverse infinite;
+    animation: moveChev 1s alternate-reverse infinite;
     padding-right: 0;
     padding-bottom: 1px;
     margin: 0;
@@ -195,7 +204,7 @@ body{
 
 
 
-@keyframes moveCart{
+@keyframes moveChev{
     from{
         transform: translateX(5px);
     }
@@ -236,3 +245,188 @@ body{
         font-weight: normal;
     }
 }
+
+/*Media Query Min*/
+
+@media only screen and (min-width: 425px) {
+    
+    .hero-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-img{
+        width: 80%;
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        place-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    
+    }
+
+    .wave-img{
+        margin-top: -5em;
+    }
+    .desc-title{
+        padding-bottom: 0em;
+        margin-top: -6em;
+        padding: 1em;
+    }
+}
+
+@media only screen and (min-width: 460px) {
+    .wave-img{
+        margin-top: -2em;
+    }
+    .desc-title{
+        padding-bottom: 0em;
+        margin-top: -3em;
+        padding: 2.5em;
+        
+    }
+
+    .button-div{
+        transform: translateY(-2em);
+    }
+
+
+}
+
+
+@media only screen and (min-width: 500px){
+    .hero-img{
+        display: none;
+    }
+
+    .hero-desktop{
+        display: flex;
+        width: 100%;
+        margin-top: 1.5em;
+    }
+
+    .desc-bg-image{
+        width: 100%;
+    }
+
+    .wave-img{
+        margin-top: -20em;
+    }
+
+    .desc-title{
+        margin-top: -25.5em;
+    }
+
+    
+
+    .head{
+        width: 45%;
+        margin-top: -.25em;
+    }
+
+    .extra-div{
+        margin: -0em;
+        padding: -10em;
+    }
+
+    .button-div{
+        transform: translateY(-2.5em);
+    }
+    
+}
+
+@media only screen and (min-width: 555px){
+    .hero-desktop{
+        width: 95%;
+    }
+
+    .button-div{
+        transform: translateY(-4em);
+    }
+
+    .desc-title{
+        padding: .75em;
+        margin-top: -22.5em;
+    }
+
+    .head{
+        width: 40%;
+    }
+
+    .wave-img{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 585px){
+    .hero-desktop{
+        width: 90%;
+    }
+
+    .desc-title{
+        margin-top: -25.5em;
+        padding: 3em;
+    }
+
+    .button-div{
+        transform: translateY(-5em)
+    }
+
+    .extra-div{
+        padding-bottom: 0;
+        padding-top: 0px;
+        margin: 0;
+    }
+}
+
+
+
+/*Media Query Max*/
+
+@media only screen and (max-width: 360px){
+    .wave-img{
+        margin-top: -3em;
+    }
+
+    .desc-title{
+        margin-top: -5em;
+        padding: 1em;
+    }
+
+    .button-div{
+        transform: translateY(3em);
+    }
+
+    .extra-div{
+        padding-bottom: 7.5em;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .wave-img{
+        margin-top: -5.5em;
+    }
+
+    .desc-title{
+        margin-top: -10em;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .button-div{
+        transform: translateY(2em);
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .button-div{
+        transform: translateY(5em);
+    }
+}
+
