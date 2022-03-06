@@ -603,9 +603,16 @@ body{
         margin-top: -2.5em;
     }
 
+    .header{
+        display: flex;
+        align-items: center;
+    }
+
     .head{
-        width: 30%;
-        padding: 1em 0 1em 0;
+        width: 22.5%;
+        margin: 1em 0 1em 0;
+        padding: .1em 0 .1em 0;
+        
     }
 
     .footer{
@@ -642,11 +649,7 @@ body{
         font-size: 2.5em;
     }
 
-    .head{
-        padding: 1.5em;
-        padding-top: 2.5em;
-        width: 35%;
-    }
+    
 }
 
 @media only screen and (min-width: 1400px){
@@ -705,11 +708,7 @@ body{
         padding: 0;
     }
 
-    .head{
-        padding: 1em;
-        padding-top: 1.5em;
-        width: 30%;
-    }
+    
 }
 
 @media only screen and (min-width: 1800px){
